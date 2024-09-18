@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1CF0019E-533E-4E73-9467-C4F1EB3B9137}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Coursework_1</RootNamespace>
+    <AssemblyName>Coursework_1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Form.Designer.cs">
+      <DependentUpon>Admin_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appoainment_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appoainment_Form.Designer.cs">
+      <DependentUpon>Appoainment_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App_Classes\Admin.cs" />
+    <Compile Include="App_Classes\Appoainment.cs" />
+    <Compile Include="App_Classes\Front_Officer.cs" />
+    <Compile Include="App_Classes\Patient.cs" />
+    <Compile Include="App_Classes\Payment.cs" />
+    <Compile Include="App_Classes\Surgeon.cs" />
+    <Compile Include="App_Classes\Treatment_Type.cs" />
+    <Compile Include="Dashboard_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard_Form.Designer.cs">
+      <DependentUpon>Dashboard_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBClasses\DB.cs" />
+    <Compile Include="Login_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Form.Designer.cs">
+      <DependentUpon>Login_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Front_Officer_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Front_Officer_Form.Designer.cs">
+      <DependentUpon>Front_Officer_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient_Form.Designer.cs">
+      <DependentUpon>Patient_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment_Form.Designer.cs">
+      <DependentUpon>Payment_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Surgeon_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Surgeon_Form.Designer.cs">
+      <DependentUpon>Surgeon_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Treatment_Type_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Treatment_Type_Form.Designer.cs">
+      <DependentUpon>Treatment_Type_Form.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin_Form.resx">
+      <DependentUpon>Admin_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appoainment_Form.resx">
+      <DependentUpon>Appoainment_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard_Form.resx">
+      <DependentUpon>Dashboard_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Form.resx">
+      <DependentUpon>Login_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Front_Officer_Form.resx">
+      <DependentUpon>Front_Officer_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient_Form.resx">
+      <DependentUpon>Patient_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment_Form.resx">
+      <DependentUpon>Payment_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Surgeon_Form.resx">
+      <DependentUpon>Surgeon_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Treatment_Type_Form.resx">
+      <DependentUpon>Treatment_Type_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\135263475-dentist-tools-over-blue-background-top-view-copy-space-flat-lay-tooth-care-dental-hygiene-and-health.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-photo-set-metal-medical-equipment-tools-teeth-dental.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dentist-medical-background-with-3d-tooth-design_1017-26095.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue Dental Clinic Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teeth-dental-care-medical-background_1419-1932.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dentist-mirror-tooth-model-dental-clinic-blur-background-banner-copy-space-3d-illustration_771335-20091.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue Dental Clinic Logo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_3783.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-vector-white-abstract-texture-vector-background-d-paper-art-style-can-be-used-in-cover-design-book-1022671816.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
